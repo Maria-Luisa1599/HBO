@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Raleway", sans-serif;
+}
+body{
+    grid-template:
+    "header" 1086px
+    "main" 2370.61px
+    "footer" 345px / 430px;
+}
+
+header{
+    background-image: linear-gradient(45deg, #020228,rgb(90, 5, 90),#ff00e5, black);
+    max-width: 430px;
+    height: 686px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    color: white;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    height: 132px;
+    gap: 16px;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header h1 span{
+    font-size: 2rem;
+    font-weight: lighter;
+    display: block;
+
+}
+
+.h2{
+    border-image-source: linear-gradient(to right, red, blue);
+    border-image-width: 4px 0 0 0;
+    border-image-outset:30px 0 0 0; 
+    border-image-slice: 10;
+    max-width: 245px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2 h2{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.41rem;
+    font-weight: 300; 
+    text-align: center;
+}
+
+.h2 h2 .value{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.h2 h2 .month{
+    display: flex;
+    align-items: end;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.value-month{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+.h2 button{
+    width: 243px;
+    height: 51px;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    padding: 16px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    background-image:linear-gradient(45deg, rgb(91, 29, 91), blue);
+}
+
+.h2 .bottom-text{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #0000004D;
+    max-width: 430px;
+    display: flex;
+    gap: 16px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav img{
+    max-width: 100%;
+    height: 16.61px;
+
+}
+
+.button-nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.button-inside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 33px;
+    margin-left: 24px;
+    border-radius: 100px;
+    background-color: #B535F6;
+}
+nav .b1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 0.80rem;
+    
+}
+
+nav .b2{
+    /* max-width: 162.55px; */
+    max-width: 1.5fr;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.80rem;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+footer{
+    grid-area: footer;
+}
