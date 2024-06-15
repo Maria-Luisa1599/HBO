@@ -8,15 +8,19 @@
     border: 0;
     font-family: "Raleway", sans-serif;
 }
+
+
 body{
     grid-template:
     "header" 1086px
     "main" 2370.61px
     "footer" 345px / 430px;
+    background-color: #020228;
 }
 
 header{
-    background-image: linear-gradient(45deg, #020228,rgb(90, 5, 90),#ff00e5, black);
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
     max-width: 430px;
     height: 686px;
     display: flex;
@@ -25,6 +29,10 @@ header{
     justify-content: space-evenly;
     gap: 32px;
     color: white;
+}
+
+header::after{
+    content: "";
 }
 
 .logos{
@@ -86,7 +94,7 @@ header h1 span{
     gap: 5px;
 }
 
-.h2 button{
+.h2 button, .all-plans button{
     width: 243px;
     height: 51px;
     letter-spacing: 2px;

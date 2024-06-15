@@ -8,3 +8,66 @@
 main{
     grid-area: main;
 }
+.all-plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: white;
+}
+
+.cardplan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    background-image: linear-gradient(rgb(52, 2, 95), rgba(68, 0, 128, 0.566), rgba(68, 0, 128, 0) );
+    gap: 18px;
+    border-radius: 10px;
+    width: 382px;
+    height: 600px;
+}
+
+.cardplan h3{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cardplan span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FF00E5;
+}
+.all-plans .month{
+    display: inline;
+}
+
+.all-plans h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.all-plans button{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 302px;
+    height: 64px;
+}
+
+.cardplan ul{
+    max-width: 80%;
+}
+.cardplan li{
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+.cardplan ul li::marker{
+    content: "+";
+    font-size: 2rem;
+}
