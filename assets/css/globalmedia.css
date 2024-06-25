@@ -1,0 +1,232 @@
+
+@media screen and (min-width: 1140px){
+    body{
+        grid-template:
+        "header" 920px
+        "main" 2147px
+        "footer" 205px / 100vw;
+        background-color: #020228;
+    }
+
+    
+    nav{
+        position: sticky;
+        top: 0;
+        background-color: #0000004D;
+        max-width: 100vw;
+        display: flex;
+        gap: 16px;
+        padding: 30px;
+        flex-direction: row;
+        justify-content:space-between ;
+    }
+    
+    nav img{
+        max-width: 100%;
+        height: 16.61px;
+    
+    }
+    
+    .button-nav{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .button-inside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 33px;
+        margin-left: 24px;
+        border-radius: 100px;
+        background-color: #B535F6;
+    }
+    
+    nav .b1{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 0.80rem;
+        
+    }
+    
+    nav .b2{
+        /* max-width: 162.55px; */
+        max-width: 1.5fr;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.80rem;
+        color: rgb(255, 255, 255);
+    
+        
+    }
+
+    header{
+        background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite alternate;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 32px;
+        color: white;
+    }
+    
+    .header-content{
+        /* background-color: rgb(8, 4, 66); */
+        max-width: 90%;
+        height: 1317px;
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 494px;
+        height: 2px;
+        gap: 16px;
+    }
+
+    .logos img{
+        max-height: 58px;
+    }
+    
+    header h1{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3rem;
+        max-width: 505px;
+        font-weight: bold;
+    }
+    
+    header h1 span{
+        width: 506px;
+        font-size: 2rem;
+        font-weight: lighter;
+        display: block;
+    
+    }
+
+    
+    @keyframes gradient{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+    .h2{
+        max-width: 245px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .h2 h2{
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.41rem;
+        font-weight: 300; 
+        text-align: center;
+    }
+    
+    .h2 h2 .value{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .h2 h2 .month{
+        display: flex;
+        align-items: end;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .value-month{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 5px;
+    }
+    
+    
+
+    .h2 .bottom-text{
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    
+    footer{
+        grid-area:footer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    .href{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 150px 16px 14px;
+        width: 382px;
+    }
+    
+    footer a{
+        font-size: 0.9rem;
+        font-family: "Raleway", "sans-serif";
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 2px;
+        margin-top: 13px;
+        width: 354px;
+    
+    }
+    
+    .link{
+        color: #9E86FF;  
+    }
+    
+    .link:visited{
+        color: white;
+    }
+    
+    .footer-text{
+        width: 382px;
+        margin-bottom: 80px;
+    }
+    
+    .text{
+        font-size: 0.75rem;
+        width: 382px;
+        font-family: "Quicksand", "sans-serif";
+        color: #9E86FF;
+    }
+    
+    .footer-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 35px;
+        width: 382px;
+    }
+    
+    .footer-img img{
+        margin-left: 33px;
+        margin-bottom: 30px;
+    }
+    
+    }

@@ -4,4 +4,96 @@
     box-sizing: border-box;
     border: 0;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
 
+}
+.login-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0F0E32;
+    border-radius: 10px;
+    width: 382px;
+    height: 464px;
+}
+
+.span-div{
+    font-family: "Raleway", "sans-serif";
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.p-div{
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.login-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input::placeholder{
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 0.732);
+    font-size: 1.1rem;
+}
+
+input:valid{
+    width: 302px;
+    height: 53px;
+    background-color:#0B0B28;
+    border: 1px solid  rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.div-button{
+    display: flex;
+}
+
+.button{
+    width: 157px;
+    height: 48px;
+    letter-spacing: 3px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    padding: 16px 40px;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-image:linear-gradient(45deg, rgb(91, 29, 91), blue);
+}
+
+.button-password{
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    height: 91px;
+}
+
+.password{
+    margin-top: 20px;
+}
+
+.password a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #9e869e;
+}
+
+footer{
+    height: 260px;
+}
