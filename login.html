@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBO Max</title>
-    <link rel="stylesheet" href="./assets/css/main-login.css">
     <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/globalmedia.css">
+    <link rel="stylesheet" href="./assets/css/main-login.css">
 </head>
 
 <body>
@@ -25,9 +26,9 @@
         <div class="login-div">
             <span class="span-div">ENTRAR</span>
             <p class="p-div">Você tem uma conta da HBO Max?</p>
-            <form name="LogIn" method="post">
-                <input type="text" placeholder="Endereço de e-mail">
-                <input type="text" placeholder="Senha">
+            <form name="LogIn">
+                <input type="email" name="email" placeholder="Endereço de e-mail" autocomplete="email">
+                <input type="password" minlength="8" placeholder="Senha">
                 <div class="button-password">
                     <div class="div-button">
                         <button class="button">ENTRAR</button>
@@ -41,17 +42,11 @@
     </main>
     <footer>
         <div class="href">
-            <a class="link" href="#">
-                <span>
-                    AGORA NA HBO MAX
-                </span>
-                </a>
-            <a class="link" href="https://www.max.com/br/pt">EM BREVE</a>
-            <a class="link" href="https://www.max.com/br/pt/movies">FILMES EM DESTAQUE</a>
-            <a class="link" href="https://www.max.com/br/pt/shows">SÉRIES</a>
-            <a class="link" href="https://help.max.com/BR-pt/Home/Index">AJUDA</a>
-        
-        <!-- https://www.max.com/br/pt/sitemap  -->
+            <a class="link link1" href="https://www.max.com/br/pt/sitemap">AGORA NA HBO MAX</a>
+            <a class="link link2" href="https://www.max.com/br/pt">EM BREVE</a>
+            <a class="link link3" href="https://www.max.com/br/pt/movies">FILMES EM DESTAQUE</a>
+            <a class="link link4" href="https://www.max.com/br/pt/shows">SÉRIES</a>
+            <a class="link link5" href="https://help.max.com/BR-pt/Home/Index">AJUDA</a>
         </div>
         <div class="footer-text">
             <p class="text">
@@ -61,10 +56,19 @@
         </div>
 
         <div class="footer-img">
-            <img style="max-width: 12px;" src="./assets/images/footer/fb_0.png" alt="Facebook">
-            <img style="max-width: 21px;" src="./assets/images/footer/twitter_0.png" alt="Twitter">
-            <img style="max-width: 20px;" src="./assets/images/footer/instagram_0.png" alt="Instagram">
-            <img style="max-width: 22px;" src="./assets/images/footer/youtube_0.png" alt="Youtube">
+            <a href="https://www.facebook.com/HBOMaxBr/">
+                <img style="max-width: 12px;" src="./assets/images/footer/fb_0.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/HBO_Brasil">
+                <img style="max-width: 21px;" src="./assets/images/footer/twitter_0.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/hbo/">
+                <img style="max-width: 20px;" src="./assets/images/footer/instagram_0.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/c/hbomaxbr">
+                <img style="max-width: 22px;" src="./assets/images/footer/youtube_0.png" alt="Youtube">
+            </a>
+            
         </div>
 
     </footer>

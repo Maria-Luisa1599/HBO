@@ -147,12 +147,13 @@ main {
 }
 
 .p-catalogue {
-    width: 382px;
+    width: 1153px;
     font-family: "Raleway", "sans-serif";
     font-size: 2rem;
     font-weight: 500;
     color: white;
     margin-bottom: 45px;
+    margin-top: 150px;
 
 }
 
@@ -162,7 +163,6 @@ main {
 }
 
 .catalogue img {
-
     max-width: 378px;
 }
 
@@ -212,14 +212,32 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 80px;
+        gap: 14px;
         margin-top: 100px;
         color: white;
     }
 
+    .cardplans{
+        perspective: 2000px;
+        perspective-origin: top;
+    }
+
+    .cardplan{
+        /* animation: 3s ease-in-out 1s; */
+        transition: transform 1s  ease-in;
+    }
+      
+      .cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan1) {
+        transform: rotateY(-40deg);
+      }
+
+      .cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan2) {
+        transform: rotateY(40deg);
+      }
+
     .cardplan {
         min-width: 536px;
-        min-height: 700px;
+        min-height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -287,11 +305,95 @@ main {
     .all-plans button {
         font-size: 13px;
         text-transform: uppercase;
-        letter-spacing: 3px;
-        width: 302px;
-        height: 64px;
+        letter-spacing: 5px;
+        width: 416px;
+        height: 48px;
     }
 
+    .catalogue{
+        width: 1152px;
+        height: 1117px;
+        display: grid;
+        grid-template: 
+        "img1 img2 img3" 530px
+        "img4  img5 img6" 530px 
+        / 1fr 1fr 1fr;
+        gap: 50px
+    }
+    
+    .catalogue-img .cimg1{
+        grid-area: img1;
+        background-image: url("/assets/images/main/MAX-Default.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
 
+    .catalogue:nth-child(2){
+        grid-area: img2;
+    }
 
+    .catalogue:nth-child(3){
+        grid-area: img3;
+    }
+
+    .catalogue:nth-child(4){
+        grid-area: img4;
+    }
+
+    .catalogue:nth-child(5){
+        grid-area: img5;
+    }
+
+    .catalogue:nth-child(6){
+        grid-area: img6;
+    }
+
+    .catalogue-img{
+        max-width: 353px;
+        height: 530px;
+    }
+
+    .catalogue-img img{
+        /* max-width: 100%; */
+        max-width: 353px;
+
+    }
+
+    .catalogue-img img:nth-child(1){
+        z-index: 2;
+    }
+
+    .catalogue-img img:nth-child(2){
+        position: relative;
+        top: -530px;
+        z-index: 0;
+    }
+    
+    .catalogue-img{
+        transition: transform 0.6s ease-out;
+    }
+    
+    .catalogue-img:hover{
+        transform: scale(1.05);
+    }
+
+    .catalogue-img img:hover :not(.catalogue-img img:nth-child(1)){
+        animation: opacity 1s ease-out forwards;
+
+    }
+
+    @keyframes opacity {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    
 }

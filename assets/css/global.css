@@ -19,16 +19,29 @@ body{
     background-color: #020228;
 }
 
+body::-webkit-scrollbar {
+    width: 7px; 
+ }
+  
+  body::-webkit-scrollbar-track {
+    background: #020228;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #ff00e5;
+    border-radius: 20px;
+    height: 250px;
+  }
+
 header{
-    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite alternate;
     max-width: 430px;
     height: 920px;
-
+    grid-area: header;
+    overflow: hidden;
 }
 
 .header-content{
+    position: relative;
     width: 100%;
     margin: auto;
     display: flex;
@@ -38,7 +51,32 @@ header{
     max-width: 100%;
     padding: 0 40px;
     color: white;
+    z-index: 2;
 }
+
+.background{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 430px;
+    height: 920px;
+    /* background-position: center, center; */
+    z-index: -1;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+}
+
+.background::after{
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, #020228, transparent);
+     
+}
+
 
 @keyframes gradient{
     0%{
@@ -52,13 +90,30 @@ header{
     }
 }
 
-.b-allplans:hover, .button-wiggle:hover{
+.b-allplans:hover{
     cursor: pointer;
+    background: transparent;
+    border: 2px solid #AC01A6;
 }
 
-.b-allplans:active, .button-wiggle:active{
-    background-color: transparent;
+.button-wiggle:hover{
+    cursor: pointer;
+    background: transparent;
+    border-radius: 100px;
     border: 2px solid #AC01A6;
+    /* border-image-source: linear-gradient(#AC01A6,#AC01A6); */
+    border-image-outset: 2px;
+    border-image-width: 2px;
+    border-image-slice: 10;
+}
+
+.b-allplans:hover{
+    transform: scale(1.06);
+    animation: plan-animation 0.5s;
+}
+
+@keyframes plan-animation{
+    
 }
 
 .logos{
@@ -166,7 +221,7 @@ nav{
 
 nav a img{
     max-width: 100%;
-    height: 16.61px;
+    height: 28px;
 
 }
 
@@ -210,7 +265,7 @@ nav .b2{
 footer{
     max-width: 1200px;
     height: 205px ;
-    grid-area:footer;
+    grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,11 +285,6 @@ footer{
 }
 
 footer a{
-    font-size: 0.9rem;
-    font-family: "Raleway", "sans-serif";
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 2px;
     margin-top: 13px;
     width: 354px;
 
@@ -267,7 +317,9 @@ footer a{
     justify-content: center;
     margin-right: 35px;
     width: 382px;
+    /* cursor: pointer; */
 }
+
 
 .footer-img img{
     margin-left: 33px;
