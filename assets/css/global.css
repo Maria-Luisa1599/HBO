@@ -10,13 +10,14 @@
     font-family: "Raleway", sans-serif;
 }
 
-
 body{
-    grid-template:
+    /* display: grid; */
+    /* grid-template:
     "header" 1086px
     "main" 2370.61px
-    "footer" 345px / 430px;
+    "footer" 345px / 430px; */
     background-color: #020228;
+    gap: 50px;
 }
 
 body::-webkit-scrollbar {
@@ -35,8 +36,8 @@ body::-webkit-scrollbar {
 
 header{
     max-width: 430px;
-    height: 920px;
-    grid-area: header;
+    /* height: 920px; */
+    /* grid-area: header; */
     overflow: hidden;
 }
 
@@ -58,7 +59,7 @@ header{
     position: absolute;
     top: 130px;
     left: 0;
-    width: 430px;
+    width: 100%;
     height: 920px;
     /* background-position: center, center; */
     z-index: -1;
@@ -211,7 +212,7 @@ nav{
     position: sticky;
     top: 0;
     background-color: #0000004D;
-    max-width: 430px;
+    width: 100%;
     display: flex;
     gap: 16px;
     padding: 30px;
@@ -221,8 +222,7 @@ nav{
 
 nav a img{
     max-width: 100%;
-    height: 28px;
-
+    height: 20px;
 }
 
 .button-nav{
@@ -264,30 +264,38 @@ nav .b2{
 
 footer{
     max-width: 1200px;
-    height: 205px ;
-    grid-area: footer;
+    /* height: 205px ; */
+    /* grid-area: footer; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 30px 16px 14px;
 }
 
-
+.footer-home{
+    margin: 100px 16px 14px;    
+}
 .href{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 150px 16px 14px;
-    width: 382px;
+    min-width: 251px;
+    max-width: 432px;
+    margin-bottom: 15px;
 }
 
-footer a{
+footer .link{
     margin-top: 13px;
     width: 354px;
-
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
 }
 
 .link{
@@ -299,7 +307,9 @@ footer a{
 }
 
 .footer-text{
-    width: 382px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 382px;
     margin-bottom: 80px;
 }
 

@@ -5,28 +5,39 @@
     border: 0;
 }
 
-main {
-    grid-area: main;
+/* socorro imagem */
+body{
+    background-image: url("../images/background-movies-series.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 50px;
+    background-blend-mode: screen;
 }
 
 .all-plans {
+    max-width: 100%;
+    /* height: 1551px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+
     color: white;
     
 }
 
 .all-plans .cardplans {
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
+    flex-direction: column;
+    margin-top: 15px;
     color: white;
 }
 
 .cardplan {
+    min-width: 277px;
+    max-width: 432px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +46,6 @@ main {
     background-image: linear-gradient(rgb(52, 2, 95), rgba(68, 0, 128, 0.566), rgba(68, 0, 128, 0));
     gap: 18px;
     border-radius: 10px;
-    width: 382px;
-    height: 600px;
 }
 
 .button-wiggle {
@@ -81,6 +90,10 @@ main {
     text-align: center;
 }
 
+.plan-vm1{
+    margin-top: -10px;
+}
+
 .cardplan span {
     font-size: 1.5em;
     font-weight: bold;
@@ -98,30 +111,22 @@ main {
     text-align: center;
 }
 
-.all-plans button {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    width: 302px;
-    height: 64px;
-}
-
 
 .all-plans button{
-    width: 243px;
-    height: 51px;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
+    width: 302px;
+    height: 64px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
     font-weight: 700;
     color: white;
     padding: 16px 40px;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 100px;
-    background-image:linear-gradient(45deg, #8F2EE5,#2000b0, #090042);
+    background-image: linear-gradient(45deg, #8F2EE5, #2000b0, #090042);
 
 }
-
 
 .cardplan ul {
     max-width: 80%;
@@ -143,39 +148,665 @@ main {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
-}
-
-.p-catalogue {
-    width: 1153px;
-    font-family: "Raleway", "sans-serif";
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 45px;
-    margin-top: 150px;
-
-}
-
-.catalogue {
-    display: flex;
-    justify-content: center;
-}
-
-.catalogue img {
-    max-width: 378px;
+    margin-top: 130px;
 }
 
 
+@media screen and (max-width: 480px){
+    .p-catalogue {
+        min-width: 251px;
+        max-width: 432px;
+        font-family: "Raleway", "sans-serif";
+        font-size: 2rem;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 45px;
+        margin-top: 150px;
+    
+    }
+    .catalogue {
+        min-width: 251px;
+        max-width: 432px;
+        display: flex;
+        overflow-x: auto;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+    .catalogue::-webkit-scrollbar {
+        height: 18px;
+        width: 10px;
+    }
+    .catalogue::-webkit-scrollbar-thumb {
+        background: #b535f6;;
+        border-radius: 20px;
+    }
+    .catalogue img {
+        max-width: 428px;
+    }
+}
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 481px) and (max-width: 800px){
+    body{
+        /* grid-template:
+        "header" 919px
+        "main" 3323.64px
+        "footer" 239px / 100vw; */
+        /* background-color: #020228; */
+    }
+
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: #0000004D;
+        max-width: 100vw;
+        display: flex;
+        gap: 16px;
+        padding: 14px;
+        flex-direction: row;
+        justify-content:space-between ;
+    }
+    
+    nav img{
+        max-width: 100%;
+        height: 28px;
+    
+    }
+    
+    .button-nav{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav .b1{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 0.80rem;
+        
+    }
+    
+    nav .b2{
+        /* max-width: 162.55px; */
+        max-width: 1.5fr;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.80rem;
+        color: rgb(255, 255, 255);
+    
+        
+    }
+
+    .p-catalogue {
+        width: 433px;
+        margin-top: 825px;
+    }
+
+    .all-plans {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .h2 button,
+    .all-plans button {
+        width: 243px;
+        height: 51px;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: white;
+        padding: 16px 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 100px;
+        background-image: linear-gradient(45deg, #8F2EE5, #2000b0, #090042);
+
+    }
+
+    .b-allplans:hover,
+    .button-wiggle:hover {
+        cursor: pointer;
+    }
+
+    .b-allplans:active,
+    .button-wiggle:active {
+        background-color: transparent;
+        border: 2px solid #AC01A6;
+    }
+
+    .all-plans .cardplans {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 14px;
+        margin-top: 100px;
+        color: white;
+    }
+
+    .cardplans{
+        perspective: 2000px;
+        perspective-origin: top;
+    }
+
+    .cardplan{
+        /* animation: 3s ease-in-out 1s; */
+        transition: transform 1s  ease-in;
+    }
+      
+      .cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan1) {
+        transform: rotateY(-40deg);
+      }
+
+      .cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan2) {
+        transform: rotateY(40deg);
+      }
+
+    .cardplans{
+        display: flex;
+        align-items: center;
+    }  
+
+    .cardplan {
+        min-width: 74%;
+        max-width: 600px;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 35px 10px;
+        background-image: linear-gradient(rgb(52, 2, 95), rgba(68, 0, 128, 0.566), rgba(68, 0, 128, 0));
+        gap: 8px;
+        border-radius: 10px;
+    }
+
+    .all-plans button {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: 416px;
+        height: 48px;
+    }
+
+    .cardplan li {
+        padding-left: 16px;
+        margin-bottom: 16px;
+        font-size: 1.3rem;
+    }
+
+    .cardplan ul li::marker {
+        content: "+";
+        font-size: 2rem;
+    }
+
+    .cardplan-vm {
+        min-width: 337px;
+        height: 61px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cardplan h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .cardplan span {
+        font-size: 2em;
+        font-weight: bold;
+        color: #FF00E5;
+    }
+
+    .all-plans .month {
+        display: inline;
+    }
+
+    .all-plans h2 {
+        width: 90%;
+        max-width: 752px;
+        min-width: 510px;
+        height: 148px;
+        margin-bottom: -70px;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .all-plans button {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        width: 325px;
+        height: 64px;
+    }
+
+    .section-catalogue{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 130px;
+    }
+
+    .catalogue{
+        width: 90%;
+        max-width: 752px;
+        min-width: 433px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+/* 
+        grid-template: 
+        "img1 img2" minmax(303px 534px)
+        "img3  img4" minmax(303px 534px)
+        "img5 img6" minmax(303px 534px)
+        / 1fr 1fr; */
+        gap: 50px
+    }
+    
+    .catalogue-img:nth-child(1){
+        grid-area: 1/1/2/2;
+        background-image: url("/assets/images/main/hbo-hover_0.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+
+    .catalogue-img:nth-child(2){
+        grid-area: 1/2/1/3;
+        background-image: url("/assets/images/main/MAX-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(3){
+        grid-area: 2/1/3/2;
+        background-image: url("/assets/images/main/DC-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(4){
+        grid-area: 2/2/3/3;
+        background-image: url("/assets/images/main/WB-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(5){
+        grid-area: 3/1/4/2;
+        background-image: url("/assets/images/main/CN-Hover.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(6){
+        grid-area: 3/2/4/3;
+        background-image: url("/assets/images/main/UCL-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img{
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .catalogue-img img{
+        max-width: 100%;
+        /* max-width: 340px; */
+
+    }
+    
+    .catalogue-img{
+        transition: transform 0.6s ease-out;
+    }
+    
+    .catalogue-img:hover{
+        transform: scale(1.05);
+    }
+
+    .catalogue-img:hover :not(.catalogue-img){
+        animation: opacity 1s ease-out forwards;
+
+    }
+
+    @keyframes opacity {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1140px){
+    body{
+        /* grid-template:
+        "header" 919px
+        "main" 3323.64px
+        "footer" 239px / 100vw; */
+        /* background-color: #020228; */
+    }
+    
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: #0000004D;
+        max-width: 100vw;
+        display: flex;
+        gap: 16px;
+        padding: 14px;
+        flex-direction: row;
+        justify-content:space-between ;
+    }
+    
+    nav img{
+        max-width: 100%;
+        height: 28px;
+    
+    }
+    
+    .button-nav{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav .b1{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 0.80rem;
+        
+    }
+    
+    nav .b2{
+        /* max-width: 162.55px; */
+        max-width: 1.5fr;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.80rem;
+        color: rgb(255, 255, 255);
+    
+        
+    }
+
+    .p-catalogue {
+        width: 433px;
+        margin-top: 730px;
+    }
+
+    .all-plans {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 44px;
+        color: white;
+    }
+
+    .h2 button,
+    .all-plans button {
+        width: 243px;
+        height: 51px;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: white;
+        padding: 16px 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 100px;
+        background-image: linear-gradient(45deg, #8F2EE5, #2000b0, #090042);
+
+    }
+
+    .b-allplans:hover,
+    .button-wiggle:hover {
+        cursor: pointer;
+    }
+
+    .b-allplans:active,
+    .button-wiggle:active {
+        background-color: transparent;
+        border: 2px solid #AC01A6;
+    }
+
+    .all-plans .cardplans {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 14px;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .cardplans{
+        perspective: 2000px;
+        perspective-origin: top;
+    }
+
+    .cardplan{
+        /* animation: 3s ease-in-out 1s; */
+        transition: transform 1s  ease-in;
+    }
+
+    .cardplans{
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    .cardplan {
+        width: 600px;
+        height: 600px;
+
+    }
+
+    .all-plans button {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: 416px;
+        height: 48px;
+    }
+
+    .cardplan li {
+        padding-left: 16px;
+        margin-bottom: 16px;
+        font-size: 1.3rem;
+    }
+
+    .cardplan ul li::marker {
+        content: "+";
+        font-size: 2rem;
+    }
+
+    .cardplan-vm {
+        min-width: 480px;
+        padding: 40px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cardplan h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .cardplan span {
+        font-size: 2em;
+        font-weight: bold;
+        color: #FF00E5;
+    }
+
+    .all-plans .month {
+        display: inline;
+    }
+
+    .all-plans h2 {
+        width: 90%;
+        min-width: 748px;
+        min-height: 74px;
+    }
+
+    .all-plans button {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        min-width: 425px;
+        min-height: 48px;
+    }
+
+    .section-catalogue{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 130px;
+    }
+
+    .catalogue{
+        width: 90%;
+        max-width: 1092px;
+        min-width: 753px;
+        min-height: 725.72px;
+        /* max-height: 1065.09px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .catalogue-img:nth-child(1){
+        grid-area: 1/1/2/2;
+        background-image: url("/assets/images/main/hbo-hover_0.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+
+    .catalogue-img:nth-child(2){
+        grid-area: 1/2/1/3;
+        background-image: url("/assets/images/main/MAX-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(3){
+        grid-area: 1/3/2/4;
+        background-image: url("/assets/images/main/DC-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(4){
+        grid-area: 2/1/3/2;
+        background-image: url("/assets/images/main/WB-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(5){
+        grid-area: 2/2/3/3;
+        background-image: url("/assets/images/main/CN-Hover.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img:nth-child(6){
+        grid-area: 2/3/3/4;
+        background-image: url("/assets/images/main/UCL-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catalogue-img{
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .catalogue-img img{
+        max-width: 100%;
+        /* max-width: 340px; */
+
+    }
+    
+    .catalogue-img{
+        transition: transform 0.6s ease-out;
+    }
+    
+    .catalogue-img:hover{
+        transform: scale(1.05);
+    }
+
+    .catalogue-img:hover :not(.catalogue-img){
+        animation: opacity 1s ease-out forwards;
+
+    }
+
+    @keyframes opacity {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 1141px) {
+
+
+    .p-catalogue {
+        width: 1152px;
+    
+    }
 
     .all-plans {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 500px;
         color: white;
     }
 
@@ -321,32 +952,47 @@ main {
         gap: 50px
     }
     
-    .catalogue-img .cimg1{
+    .catalogue-img:nth-child(1){
         grid-area: img1;
-        background-image: url("/assets/images/main/MAX-Default.webp");
+        background-image: url("/assets/images/main/hbo-hover_0.webp");
         background-size: contain;
         background-repeat: no-repeat;
     }
     
 
-    .catalogue:nth-child(2){
+    .catalogue-img:nth-child(2){
         grid-area: img2;
+        background-image: url("/assets/images/main/MAX-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .catalogue:nth-child(3){
+    .catalogue-img:nth-child(3){
         grid-area: img3;
+        background-image: url("/assets/images/main/DC-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .catalogue:nth-child(4){
+    .catalogue-img:nth-child(4){
         grid-area: img4;
+        background-image: url("/assets/images/main/WB-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .catalogue:nth-child(5){
+    .catalogue-img:nth-child(5){
         grid-area: img5;
+        background-image: url("/assets/images/main/CN-Hover.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .catalogue:nth-child(6){
+    .catalogue-img:nth-child(6){
         grid-area: img6;
+        background-image: url("/assets/images/main/UCL-Hover.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .catalogue-img{
@@ -359,16 +1005,6 @@ main {
         max-width: 353px;
 
     }
-
-    .catalogue-img img:nth-child(1){
-        z-index: 2;
-    }
-
-    .catalogue-img img:nth-child(2){
-        position: relative;
-        top: -530px;
-        z-index: 0;
-    }
     
     .catalogue-img{
         transition: transform 0.6s ease-out;
@@ -378,7 +1014,7 @@ main {
         transform: scale(1.05);
     }
 
-    .catalogue-img img:hover :not(.catalogue-img img:nth-child(1)){
+    .catalogue-img:hover :not(.catalogue-img){
         animation: opacity 1s ease-out forwards;
 
     }
