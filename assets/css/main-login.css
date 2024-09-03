@@ -5,6 +5,14 @@
     border: 0;
 }
 
+body{
+    background-image: url(/assets/images/background-movies-series.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top 50px;
+    background-blend-mode: screen;
+ } 
+
 main {
     display: flex;
     flex-direction: column;
@@ -187,14 +195,14 @@ footer {
         align-items: center;
         gap: 10px;
     } */
-/* 
-    body{
+
+    /* body{
         background-image: url(/assets/images/background-movies-series.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top 50px;
         background-blend-mode: screen;
-    } */
+     }  */
 
     main{
         margin-top: 44px;
