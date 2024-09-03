@@ -428,24 +428,36 @@ nav .b2 {
   }
 
   .catalogue {
-    height: 667px;
-    /* min-width: 273px; */
+    width: 100%;
     max-width: 432px;
+    /* height: 442px; */
+    min-width: 273px;
     display: flex;
     overflow-x: auto;
     gap: 25px;
     /* margin-left: 50px; */
+    padding: 10px;
     overflow-x: scroll;
+    overflow-y: hidden;
     /* background-color: white; */
   }
-  .catalogue img {
-    /* width: 273px;
-        max-width: 428px; */
+  
+  .catalogue-img{
+    /* width: 100%; */
     min-width: 273px;
-    max-width: 428px;
+    max-width: 428px;  
+
   }
+  
+  .catalogue img {
+    width: 100%;
+    /* max-width: 428px; */
+
+  }
+
+
   .catalogue::-webkit-scrollbar {
-    height: 18px;
+    height: 7px;
     width: 10px;
   }
   .catalogue::-webkit-scrollbar-thumb {
