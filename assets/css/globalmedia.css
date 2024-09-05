@@ -667,6 +667,32 @@
             background-position: 0% 50%;
         }
     }
+  
+    .b-allplans:hover{
+        cursor: pointer;
+        background: transparent;
+        border: 2px solid #AC01A6;
+    }
+
+    .button-wiggle:hover{
+        cursor: pointer;
+        background: transparent;
+        border-radius: 100px;
+        border: 2px solid #AC01A6;
+        /* border-image-source: linear-gradient(#AC01A6,#AC01A6); */
+        border-image-outset: 2px;
+        border-image-width: 2px;
+        border-image-slice: 10;
+    }
+
+    .b-allplans:hover{
+        transform: scale(1.06);
+        animation: plan-animation 0.5s;
+    }
+
+    @keyframes plan-animation{
+        /* animação botão quando clica rs */
+    }
 
     .h2 {
         max-width: 245px;

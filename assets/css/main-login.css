@@ -38,7 +38,7 @@ main {
 
 .span-div {
     min-width: 171px;
-    max-width: 352px;
+    max-width: 100%;
     text-align: center;
     font-family: "Raleway", "sans-serif";
     font-size: 1.25rem;
@@ -129,6 +129,8 @@ footer {
     nav{
         flex-direction: row;
         justify-content: space-between;
+        padding: 10px
+
     }
 
     .login-div {
@@ -159,6 +161,12 @@ footer {
 
 }
 @media screen and (min-width: 801px) and (max-width: 1140px){
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
 
     .login-div {
         max-width: 800px;
@@ -208,8 +216,11 @@ footer {
         margin-top: 44px;
     }
 
-    nav{
-        height: 62px;
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        /* height: 62px; */
     }
 
     nav a{
