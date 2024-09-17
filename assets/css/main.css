@@ -4,8 +4,12 @@
   box-sizing: border-box;
   border: 0;
 }
-
 .all-plans {
+    background-image: url(/assets/images/background-movies-series.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top 50px;
+    background-blend-mode: screen;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -161,13 +165,52 @@ nav .b1 {
 }
 
 nav .b2 {
-  /* max-width: 162.55px; */
   max-width: 1.5fr;
+  width: 100%;
+  height: 33px;
+  border-radius: 100px;
+  padding: 8px;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
 }
+
+
+.button-inside:hover,
+a.b2:hover{
+  animation: purple-to-white 1s forwards;
+}
+@keyframes purple-to-white {
+  0%{
+    background-color:#B535F6;;
+    color: white;
+  }
+  100%{
+      background-color:white;
+      color: black;
+  }
+}
+
+.button-inside:not(:hover),
+a.b2:not(:hover)
+{
+  animation: purple-to-white-reverse 1s forwards;
+}
+
+@keyframes purple-to-white-reverse {
+  0%{
+    background-color:white;
+    color: black;
+  
+  }
+  100%{
+    background-color:#B535F6;;
+    color: white;
+  }
+}
+
+
 
 .p-catalogue {
   min-width: 433px;
@@ -315,7 +358,24 @@ nav .b2 {
   min-width: 328px;
   max-width: 504px;
   height: 64px;
+  background: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
+  /* outline: 3px solid transparent; */
+  /* transition: background 1s, outline 1s, transform 1s; */
+  /* animation: linear-swipe 2s; */
 }
+
+
+/* .all-plans button:hover{
+  animation: linear-swipe 2s ease-in-out 0.5s normal;
+}
+@keyframes linear-swipe {
+  0%{
+    background-image: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
+  }
+  100%{
+    background-image: linear-gradient(transparent);
+  }
+} */
 
 .section-catalogue {
   width: 100%;
@@ -839,16 +899,12 @@ nav .b2 {
     background-image: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
   }
 
-  .b-allplans:hover,
-  .button-wiggle:hover {
-    cursor: pointer;
-  }
-
+/* 
   .b-allplans:active,
   .button-wiggle:active {
     background-color: transparent;
     border: 2px solid #ac01a6;
-  }
+  } */
 
   .all-plans .cardplans {
     width: 1152px;
@@ -897,12 +953,66 @@ nav .b2 {
     border-radius: 10px;
   }
 
+
+  
   .all-plans button {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
     width: 416px;
     height: 48px;
+    background: linear-gradient(45deg, #8f2ee5, #2000b0, #090042, transparent);
+    background-size: 300% 300%;
+  }
+  
+  .b-allplans:hover,
+  .button-wiggle:hover
+  {
+    cursor: pointer;
+
+    animation: linear-swipe 1.3s forwards;
+  }
+  @keyframes linear-swipe {
+    0%{
+       background-position: 0% 100%; 
+    
+    }
+    100%{
+      background-position: 100% 0%;
+      transform: scale(1.06);
+      border: 2px solid #ac01a6;
+    }
+  }
+  
+  .b-allplans:not(:hover),
+  .button-wiggle:not(:hover)
+  {
+    animation: linear-swipe-reverse 1s forwards;
+  }
+
+  @keyframes linear-swipe-reverse {
+    0%{
+       background-position: 100% 0%;
+       transform: scale(1.06);
+    
+    }
+    100%{
+      background-position: 0% 100%; 
+      transform: scale(1);
+    }
+  }
+  
+
+
+  .button-wiggle:hover{
+      cursor: pointer;
+      background: transparent;
+      border-radius: 100px;
+      border: 2px solid #AC01A6;
+      /* border-image-source: linear-gradient(#AC01A6,#AC01A6); */
+      border-image-outset: 2px;
+      border-image-width: 2px;
+      border-image-slice: 10;
   }
 
   .cardplan li {
