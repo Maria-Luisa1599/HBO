@@ -11,11 +11,6 @@
 }
 
 body{
-    /* display: grid; */
-    /* grid-template:
-    "header" 1086px
-    "main" 2370.61px
-    "footer" 345px / 430px; */
     background-color: #020228;
     gap: 50px;
 }
@@ -36,8 +31,6 @@ body::-webkit-scrollbar {
 
 header{
     max-width: 430px;
-    /* height: 920px; */
-    /* grid-area: header; */
     overflow: hidden;
 }
 
@@ -65,7 +58,6 @@ header{
     left: 0;
     width: 100%;
     height: 920px;
-    /* background-position: center, center; */
     z-index: -1;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
@@ -229,8 +221,7 @@ nav .b1{
 }
 
 nav .b2{
-    /* max-width: 162.55px; */
-    max-width: 1.5fr;
+        max-width: 1.5fr;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.80rem;
@@ -241,8 +232,6 @@ nav .b2{
 
 footer{
     max-width: 1200px;
-    /* height: 205px ; */
-    /* grid-area: footer; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,7 +275,6 @@ footer .link{
 .footer-text{
     display: flex;
     flex-wrap: wrap;
-    /* min-width: 382px; */
     margin-bottom: 80px;
 }
 
@@ -305,7 +293,6 @@ footer .link{
     justify-content: center;
     margin-right: 35px;
     width: 382px;
-    /* cursor: pointer; */
 }
 
 

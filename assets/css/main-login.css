@@ -120,10 +120,6 @@ input:invalid {
     color: #9e86ff;
 }
 
-footer {
-    /* height: 120px; */
-}
-
 @media screen and (min-width: 481px) and (max-width: 800px){
     
     nav{
@@ -196,22 +192,6 @@ footer {
 }
     
 @media screen and (min-width: 1141px) {
-    /* body{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    } */
-
-    /* body{
-        background-image: url(/assets/images/background-movies-series.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top 50px;
-        background-blend-mode: screen;
-     }  */
-
     main{
         margin-top: 44px;
     }
@@ -220,7 +200,6 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 10px;
-        /* height: 62px; */
     }
 
     nav a{
@@ -254,14 +233,10 @@ footer {
         border: 1px solid rgb(255, 76, 76);
     }
     
-    /* input:autofill{
-        background-color: white;
-        
-        } */
-        .span-div{
-            margin: 0 auto;
-            margin-bottom: 61px;
-        }
+    .span-div{
+        margin: 0 auto;
+        margin-bottom: 61px;
+    }
         
     .p-div {
         align-self: flex-start;
@@ -298,15 +273,12 @@ footer {
     }
     
     .link {
-        /* width: 354px; */
         font-size: 0.9rem;
         font-family: "Raleway", "sans-serif";
         font-weight: bold;
         text-decoration: none;
         letter-spacing: 2px;
-        /* margin-top: 13px; */
         color: #9E86FF;
-        /* margin: 0 14px; */
     }
 
     .link1 {
@@ -340,7 +312,6 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* margin-bottom: 80px; */
     }
 
     .text {

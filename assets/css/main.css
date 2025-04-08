@@ -238,21 +238,9 @@ a.b2:not(:hover)
   border-radius: 100px;
   background-image: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
 }
-/* 
-.b-allplans:hover,
-.button-wiggle:hover {
-  cursor: pointer;
-}
-
-.b-allplans:active,
-.button-wiggle:active {
-  background-color: transparent;
-  border: 2px solid #ac01a6;
-} */
 
 .all-plans .cardplans {
   width: 100%;
-  /* height: 600px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -267,16 +255,9 @@ a.b2:not(:hover)
   display: flex;
   align-items: center;
 }
-/* .cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan1) {
-  transform: rotateY(-40deg);
-}
 
-.cardplans:has(.cardplan:hover) .cardplan:not(:hover, .plan2) {
-  transform: rotateY(40deg);
-} */
 
 .cardplan {
-  /* animation: 3s ease-in-out 1s; */
   min-width: 74%;
   max-width: 600px;
   min-height: 600px;
@@ -341,8 +322,6 @@ a.b2:not(:hover)
 
 .all-plans h2 {
   width: 90%;
-  /* max-width: 752px;
-        min-width: 510px; */
   height: 148px;
   margin-bottom: 30px;
   color: white;
@@ -359,23 +338,7 @@ a.b2:not(:hover)
   max-width: 504px;
   height: 64px;
   background: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
-  /* outline: 3px solid transparent; */
-  /* transition: background 1s, outline 1s, transform 1s; */
-  /* animation: linear-swipe 2s; */
 }
-
-
-/* .all-plans button:hover{
-  animation: linear-swipe 2s ease-in-out 0.5s normal;
-}
-@keyframes linear-swipe {
-  0%{
-    background-image: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
-  }
-  100%{
-    background-image: linear-gradient(transparent);
-  }
-} */
 
 .section-catalogue {
   width: 100%;
@@ -392,15 +355,6 @@ a.b2:not(:hover)
   max-width: 752px;
   min-width: 433px;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
-  /* 
-
-        grid-template: 
-        "img1 img2" minmax(303px 534px)
-        "img3  img4" minmax(303px 534px)
-        "img5 img6" minmax(303px 534px)
-        / 1fr 1fr; */
   gap: 50px;
 }
 
@@ -488,7 +442,6 @@ a.b2:not(:hover)
   }
 
   .catalogue {
-    /* width: 100%; */
     max-width: 100%;
     min-width: 273px;
     display: flex;
@@ -499,22 +452,13 @@ a.b2:not(:hover)
     padding-bottom: 5px;
     overflow-x: scroll;
     overflow-y: hidden;
-    /* background-color: white; */
   }
   
   .catalogue-img{
-    /* width: 100%; */
     min-width: 273px;
     max-width: 428px;  
 
   }
-  
-  .catalogue img {
-    width: 100%;
-    /* max-width: 428px; */
-
-  }
-
 
   .catalogue::-webkit-scrollbar {
     height: 7px;
@@ -552,13 +496,6 @@ a.b2:not(:hover)
 }
 
 @media screen and (min-width: 481px) and (max-width: 800px) {
-  body {
-    /* grid-template:
-        "header" 919px
-        "main" 3323.64px
-        "footer" 239px / 100vw; */
-    /* background-color: #020228; */
-  }
 
   nav {
     position: sticky;
@@ -578,13 +515,6 @@ a.b2:not(:hover)
 }
 
 @media screen and (min-width: 801px) and (max-width: 1140px) {
-  body {
-    /* grid-template:
-        "header" 919px
-        "main" 3323.64px
-        "footer" 239px / 100vw; */
-    /* background-color: #020228; */
-  }
 
   nav {
     position: sticky;
@@ -619,7 +549,6 @@ a.b2:not(:hover)
   }
 
   nav .b2 {
-    /* max-width: 162.55px; */
     max-width: 1.5fr;
     text-decoration: none;
     font-weight: 700;
@@ -691,7 +620,6 @@ a.b2:not(:hover)
   }
 
   .cardplan {
-    /* animation: 3s ease-in-out 1s; */
     transition: transform 1s ease-in;
   }
 
@@ -779,7 +707,6 @@ a.b2:not(:hover)
     max-width: 1092px;
     min-width: 753px;
     min-height: 725.72px;
-    /* max-height: 1065.09px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -830,12 +757,10 @@ a.b2:not(:hover)
 
   .catalogue-img {
     width: 100%;
-    /* height: 100%; */
   }
 
   .catalogue-img img {
     max-width: 100%;
-    /* max-width: 340px; */
   }
 
   .catalogue-img {
@@ -899,13 +824,6 @@ a.b2:not(:hover)
     background-image: linear-gradient(45deg, #8f2ee5, #2000b0, #090042);
   }
 
-/* 
-  .b-allplans:active,
-  .button-wiggle:active {
-    background-color: transparent;
-    border: 2px solid #ac01a6;
-  } */
-
   .all-plans .cardplans {
     width: 1152px;
     height: 600px;
@@ -923,7 +841,6 @@ a.b2:not(:hover)
   }
 
   .cardplan {
-    /* animation: 3s ease-in-out 1s; */
     transition: transform 1s ease-in;
   }
 
@@ -942,7 +859,6 @@ a.b2:not(:hover)
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* margin: 32px; */
     padding: 20px 10px;
     background-image: linear-gradient(
       rgb(52, 2, 95),
@@ -1009,7 +925,6 @@ a.b2:not(:hover)
       background: transparent;
       border-radius: 100px;
       border: 2px solid #AC01A6;
-      /* border-image-source: linear-gradient(#AC01A6,#AC01A6); */
       border-image-outset: 2px;
       border-image-width: 2px;
       border-image-slice: 10;
@@ -1063,7 +978,6 @@ a.b2:not(:hover)
   .all-plans button {
     font-size: 13px;
     text-transform: uppercase;
-    /* letter-spacing: 5px; */
     min-width: 426px;
     max-width: 436px;
     height: 48px;
@@ -1129,7 +1043,6 @@ a.b2:not(:hover)
   }
 
   .catalogue-img img {
-    /* max-width: 100%; */
     max-width: 353px;
   }
 
